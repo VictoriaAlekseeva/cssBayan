@@ -32,9 +32,16 @@ body {
   display: none;
   padding: 20px;
 }
+.memecard-wrapper:hover {
+  cursor: pointer;
+}
 
 .memecard-wrapper:hover .memecard-img, .memecard-wrapper:hover .memecard-close {
   display: block;
+}
+
+.memecard-wrapper:active .memecard-img {
+  opacity: 0.4;
 }
 
 .container:hover .memecard-open {
