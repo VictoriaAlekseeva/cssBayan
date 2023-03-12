@@ -1,18 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   background-color:cadetblue;
+  transition: 0.3s;
 }
 
 .container {
   width: 800px;
   margin: 0 auto;
+  padding: 20px 0;
 }
 
+.header {
+  padding: 10px 0;
+}
 .memecard-header {
-  border-top: 2px solid blue;
   padding: 10px 0;
 }
 
 .memecard-img {
-  display: block;
   margin: 0 auto;
+  display: none;
 }
+
+.memecard-wrapper:hover .memecard-img, .memecard-wrapper:hover .memecard-close {
+  display: block;
+}
+
+.container:hover .memecard-open {
+  display: block;
+}
+
+.memecard-wrapper:hover .memecard-open {
+  display: none;
+}
+
+.memecard-open, .memecard-close {
+  display: none;
+}
+
+.memecard-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 2px solid blue;
+}
+
