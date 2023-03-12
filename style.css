@@ -3,9 +3,6 @@
   padding: 0;
 }
 
-html {
-  font-size: 10px;
-}
 
 body {
   background-color:cadetblue;
@@ -14,23 +11,22 @@ body {
 .container {
   width: 80%;
   margin: 0 auto;
-  padding: 20px 0;
+  padding: 2vh 0;
 }
 
 .header {
-  padding-bottom: 20px;
+  padding-bottom: 2vh;
 }
 
 .memecard-header {
-  padding: 10px 0;
+  padding: 1vh 0;
 }
 
 .memecard-img {
   margin: 0 auto;
-  max-width: 400px;
-  max-height: 400px;
+  max-width: 50%;
   display: none;
-  padding: 20px;
+  padding: 2vh;
 }
 .memecard-wrapper:hover {
   cursor: pointer;
@@ -60,41 +56,31 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 2px solid blue;
+  border-top: 0.1rem solid blue;
 }
 
-.open-element .memecard-close,
-.open-element .memecard-img {
+.open-element .memecard-close, .open-element .memecard-img {
   display: block;
 }
 
-@media (min-width: 320px) and (max-width: 568px){
+@media (min-width: 320px) and (max-width: 720px){
   html {
     font-size: 0.8rem;
   }
 
-  .container {
-    width: 250px;
-  }
-
   .memecard-img {
-    max-width: 200px;
-    max-height: 200px;
+    max-width: 60%;
   }
 }
 
-@media (min-width: 820px) and (max-width: 1080px) {
+@media (min-width: 721px) and (max-width: 1080px) {
   html {
     font-size: 1.2rem;
   }
 
-  .container {
-    width: 750px;
-  }
-
   .memecard-img {
-    max-width: 350px;
-    max-height: 350px;
+    max-width: 50%;
+    max-height: 50%;
   }
 }
 
@@ -104,12 +90,12 @@ body {
   }
 
   .container {
-    width: 1000px;
+    width: 70%;
   }
 
   .memecard-img {
-    max-width: 450px;
-    max-height: 450px;
+    max-width: 40%;
+    max-height: 40%;
   }
 
 }
