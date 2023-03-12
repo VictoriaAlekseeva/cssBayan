@@ -23,10 +23,9 @@ body {
 }
 
 .memecard-img {
-  margin: 0 auto;
   max-width: 50%;
   display: none;
-  padding: 2vh;
+  margin: 2vh auto;
 }
 .memecard-wrapper:hover {
   cursor: pointer;
@@ -36,8 +35,13 @@ body {
   display: block;
 }
 
-.memecard-wrapper:active .memecard-img {
+.memecard-img:hover {
   opacity: 0.4;
+}
+
+.memecard-img:active {
+  opacity: 1;
+  box-shadow: 1rem 1rem 4rem blue;
 }
 
 .container:hover .memecard-open {
