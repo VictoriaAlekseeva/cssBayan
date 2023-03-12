@@ -17,8 +17,9 @@ body {
 .header {
   padding-bottom: 20px;
 }
+
 .memecard-header {
-  padding-top: 10px;
+  padding: 10px 0;
 }
 
 .memecard-img {
@@ -26,9 +27,6 @@ body {
   display: none;
 }
 
-.memecard-wrapper {
-  padding-bottom: 10px;
-}
 .memecard-wrapper:hover .memecard-img, .memecard-wrapper:hover .memecard-close {
   display: block;
 }
