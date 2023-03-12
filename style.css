@@ -15,10 +15,10 @@ body {
 }
 
 .header {
-  padding: 10px 0;
+  padding-bottom: 20px;
 }
 .memecard-header {
-  padding: 10px 0;
+  padding-top: 10px;
 }
 
 .memecard-img {
@@ -26,6 +26,9 @@ body {
   display: none;
 }
 
+.memecard-wrapper {
+  padding-bottom: 10px;
+}
 .memecard-wrapper:hover .memecard-img, .memecard-wrapper:hover .memecard-close {
   display: block;
 }
