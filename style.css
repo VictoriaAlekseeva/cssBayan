@@ -85,13 +85,13 @@ body {
   transition: 0s;
 }
 
-/* @media (min-width: 320px) and (max-width: 720px){
+@media (min-width: 320px) and (max-width: 720px){
   html {
     font-size: 0.8rem;
   }
 
-  .memecard-img {
-    max-width: 60%;
+  .memecard-wrapper:hover .memecard-img, .open-element .memecard-img {
+    width: 60vw;
   }
 }
 
@@ -100,10 +100,10 @@ body {
     font-size: 1.2rem;
   }
 
-  .memecard-img {
-    max-width: 50%;
-    max-height: 50%;
+  .memecard-wrapper:hover .memecard-img, .open-element .memecard-img {
+    width: 50vw;
   }
+
 }
 
 @media (min-width: 1080px) {
@@ -115,8 +115,7 @@ body {
     width: 70%;
   }
 
-  .memecard-img {
-    max-width: 40%;
-    max-height: 40%;
+  .memecard-wrapper:hover .memecard-img, .open-element .memecard-img {
+    width: 40vw;
   }
-} */
+}
