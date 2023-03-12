@@ -3,7 +3,6 @@
   padding: 0;
 }
 
-
 body {
   background-color:cadetblue;
 }
@@ -19,29 +18,41 @@ body {
 }
 
 .memecard-header {
-  padding: 1vh 0;
+  font-size: 1.6rem;
+  padding: 2vh 0;
 }
 
 .memecard-img {
-  max-width: 50%;
-  display: none;
+  position: absolute;
+  width: 20vh;
+  height: 0;
+  transition: 0.5s;
   margin: 2vh auto;
+  display: block;
 }
+
 .memecard-wrapper:hover {
   cursor: pointer;
 }
 
-.memecard-wrapper:hover .memecard-img, .memecard-wrapper:hover .memecard-close {
+.memecard-wrapper:hover .memecard-img {
+  display: block;
+  width: 30vw;
+  height: auto;
+  position: relative;
+}
+
+.memecard-wrapper:hover .memecard-close {
   display: block;
 }
 
-.memecard-img:hover {
-  opacity: 0.4;
+.memecard-wrapper:active {
+  opacity: 0.5;
+  transition: 0.5s;
 }
 
-.memecard-img:active {
-  opacity: 1;
-  box-shadow: 1rem 1rem 4rem blue;
+.memecard-wrapper:active .memecard-header-wrapper {
+  color: blue;
 }
 
 .container:hover .memecard-open {
@@ -63,11 +74,18 @@ body {
   border-top: 0.1rem solid blue;
 }
 
-.open-element .memecard-close, .open-element .memecard-img {
+.open-element .memecard-close {
   display: block;
 }
 
-@media (min-width: 320px) and (max-width: 720px){
+.open-element .memecard-img {
+  position: relative;
+  width: 30vw;
+  height: auto;
+  transition: 0s;
+}
+
+/* @media (min-width: 320px) and (max-width: 720px){
   html {
     font-size: 0.8rem;
   }
@@ -101,7 +119,4 @@ body {
     max-width: 40%;
     max-height: 40%;
   }
-
-}
-
-
+} */
