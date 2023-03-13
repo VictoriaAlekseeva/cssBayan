@@ -31,13 +31,16 @@ body {
   display: block;
 }
 
-.memecard-wrapper:hover {
-  cursor: pointer;
-}
-
 .memecard-wrapper:hover .memecard-img {
   display: block;
   width: 30vw;
+  height: auto;
+  position: relative;
+}
+
+.memecard-wrapper:checked .memecard-img {
+  display: block;
+  width: 32vw;
   height: auto;
   position: relative;
 }
@@ -55,7 +58,7 @@ body {
   color: blue;
 }
 
-.container:hover .memecard-open {
+.container:hover .memecard-open, .container:hover .open-element .memecard-close {
   display: block;
 }
 
@@ -72,10 +75,6 @@ body {
   justify-content: space-between;
   align-items: center;
   border-top: 0.1rem solid blue;
-}
-
-.open-element .memecard-close {
-  display: block;
 }
 
 .open-element .memecard-img {
@@ -113,6 +112,10 @@ body {
 
   .container {
     width: 70%;
+  }
+
+  .memecard-wrapper:hover {
+    cursor: pointer;
   }
 
   .memecard-wrapper:hover .memecard-img, .open-element .memecard-img {
