@@ -1,0 +1,124 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color:cadetblue;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 2vh 0;
+}
+
+.header {
+  padding-bottom: 2vh;
+}
+
+.memecard-header {
+  font-size: 1.6rem;
+  padding: 2vh 0;
+}
+
+.memecard-img {
+  position: absolute;
+  width: 20vh;
+  height: 0;
+  transition: 0.5s;
+  margin: 2vh auto;
+  display: block;
+}
+
+.memecard-wrapper:hover .memecard-img {
+  display: block;
+  width: 30vw;
+  height: auto;
+  position: relative;
+}
+
+.memecard-wrapper:checked .memecard-img {
+  display: block;
+  width: 32vw;
+  height: auto;
+  position: relative;
+}
+
+.memecard-wrapper:hover .memecard-close {
+  display: block;
+}
+
+.memecard-wrapper:active {
+  opacity: 0.5;
+  transition: 0.5s;
+}
+
+.memecard-wrapper:active .memecard-header-wrapper {
+  color: blue;
+}
+
+.container:hover .memecard-open, .container:hover .open-element .memecard-close {
+  display: block;
+}
+
+.memecard-wrapper:hover .memecard-open {
+  display: none;
+}
+
+.memecard-open, .memecard-close {
+  display: none;
+}
+
+.memecard-header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 0.1rem solid blue;
+}
+
+.open-element .memecard-img {
+  position: relative;
+  width: 30vw;
+  height: auto;
+  transition: 0s;
+}
+
+@media (min-width: 320px) and (max-width: 720px){
+  html {
+    font-size: 0.8rem;
+  }
+
+  .memecard-wrapper:hover .memecard-img, .open-element .memecard-img {
+    width: 60vw;
+  }
+}
+
+@media (min-width: 721px) and (max-width: 1080px) {
+  html {
+    font-size: 1.2rem;
+  }
+
+  .memecard-wrapper:hover .memecard-img, .open-element .memecard-img {
+    width: 50vw;
+  }
+
+}
+
+@media (min-width: 1080px) {
+  html {
+    font-size: 1.6rem;
+  }
+
+  .container {
+    width: 70%;
+  }
+
+  .memecard-wrapper:hover {
+    cursor: pointer;
+  }
+
+  .memecard-wrapper:hover .memecard-img, .open-element .memecard-img {
+    width: 40vw;
+  }
+}
